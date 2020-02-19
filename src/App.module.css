@@ -1,5 +1,15 @@
-.App {
+body {
   width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  width: 50%;
+  display: flex;
   text-align: center;
+  background-color: lightblue;
+  position: absolute;
+  top: 10%;
+  left: 20%;
 }

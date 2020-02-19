@@ -1,5 +1,6 @@
 import React from 'react';
-import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
+import VideoList from './Components/VideoList/VideoList'
+import Video from './Components/Video/Video'
 import classes from './App.module.css'
 
 
@@ -11,7 +12,9 @@ class App extends React.Component {
   render() {
     return (
       <div className={classes.App}>
-        <VideoPlayer />
+        <Video />
+        <VideoList />
+
       </div>
     );
   }

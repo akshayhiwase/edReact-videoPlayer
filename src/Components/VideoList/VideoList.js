@@ -1,7 +1,7 @@
 import React from 'react'
 import Axios from 'axios'
-import classes from './VideoPlayer.module.css'
-class VideoPlayer extends React.Component {
+import classes from './VideoList.module.css'
+class VideoList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,4 +32,4 @@ class VideoPlayer extends React.Component {
     }
 }
 
-export default VideoPlayer;
+export default VideoList;

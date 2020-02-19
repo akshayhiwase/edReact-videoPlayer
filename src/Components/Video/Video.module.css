@@ -1,0 +1,6 @@
+.videoPlayer {
+  width: 60%;
+}
+.videoPlayer iframe {
+  width: 100%;
+}

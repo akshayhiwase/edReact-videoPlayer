@@ -1,0 +1,16 @@
+.videoList {
+  width: 40%;
+  border-left: 1px solid black;
+  margin-left: 20px;
+}
+
+.videoCards {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+}
+.videoCards img {
+  width: 90%;
+  height: auto;
+}
