@@ -1,0 +1,12 @@
+.videoList {
+  width: 100%;
+  text-align: end;
+}
+
+.videoCards {
+  width: 20%;
+}
+.videoCards img {
+  width: 100%;
+  height: auto;
+}
