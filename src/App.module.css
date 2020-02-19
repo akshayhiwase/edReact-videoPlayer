@@ -3,6 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: chocolate;
 }
 .App {
   width: 50%;
@@ -11,5 +12,5 @@ body {
   background-color: lightblue;
   position: absolute;
   top: 10%;
-  left: 20%;
+  left: 25%;
 }

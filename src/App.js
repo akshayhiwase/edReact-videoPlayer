@@ -2,6 +2,7 @@ import React from 'react';
 import VideoList from './Components/VideoList/VideoList'
 import Video from './Components/Video/Video'
 import classes from './App.module.css'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 
 class App extends React.Component {
@@ -11,11 +12,17 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className={classes.App}>
-        <Video />
-        <VideoList />
+      <BrowserRouter>
+        <div className={classes.App}>
+          <Switch>
+            <Route path="/:id" component={Video} />
 
-      </div>
+
+          </Switch>
+          <VideoList />
+
+        </div>
+      </BrowserRouter>
     );
   }
 }

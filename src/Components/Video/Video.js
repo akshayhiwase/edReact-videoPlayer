@@ -11,6 +11,7 @@ class Video extends React.Component {
     }
 
     componentDidMount() {
+        // const videoId = this.props.params.id
         Axios.get("https://5dfb78000301690014b8fbde.mockapi.io/video")
             .then((response) => {
 

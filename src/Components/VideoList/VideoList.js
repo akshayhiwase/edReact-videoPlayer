@@ -1,5 +1,6 @@
 import React from 'react'
 import Axios from 'axios'
+import { Link } from 'react-router-dom'
 import classes from './VideoList.module.css'
 class VideoList extends React.Component {
     constructor(props) {
@@ -18,10 +19,14 @@ class VideoList extends React.Component {
     }
     render() {
         const videoContainer = this.state.videoList.map((item) => {
+
             return <div className={classes.videoCards} key={item.id}>
-                <img src={item.thumbnail} alt={item.title} />
-                <h3>{item.title}</h3>
+                <Link to={`/${item.id}`}>
+                    <img src={item.thumbnail} alt={item.title} />
+                    <h3>{item.title}</h3>
+                </Link>
             </div>
+
         })
         return (
             <div className={classes.videoList}>
