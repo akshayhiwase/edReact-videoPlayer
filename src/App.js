@@ -13,10 +13,12 @@ class App extends React.Component {
       videoCard: [],
       videoId: "",
       title: "",
-      description: ""
+      description: "",
+      views: ""
     }
     this.handleVideoCardClick(1)
   }
+
 
   handleVideoCardClick = (id) => {
     Axios.get("https://5dfb78000301690014b8fbde.mockapi.io/video/" + id)
@@ -26,7 +28,8 @@ class App extends React.Component {
 
           videoId: response.data.vimeoId,
           title: response.data.title,
-          description: response.data.description
+          description: response.data.description,
+          views: response.data.views
         })
 
       })
@@ -35,15 +38,18 @@ class App extends React.Component {
   }
   render() {
     return (
+      <div className={classes.mainContainer}>
+        <h1 >Video Player</h1>
 
-      <div className={classes.App}>
+        <div className={classes.App}>
 
-        <Video videoId={this.state.videoId} videoCard={this.state.videoCard} description={this.state.description} title={this.state.title} />
+          <Video videoId={this.state.videoId} videoCard={this.state.videoCard} description={this.state.description} title={this.state.title} views={this.state.views} />
 
 
 
-        <VideoList handleClick={this.handleVideoCardClick} />
+          <VideoList handleClick={this.handleVideoCardClick} />
 
+        </div>
       </div>
 
     );

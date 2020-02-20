@@ -1,6 +1,14 @@
 .videoPlayer {
-  width: 60%;
+  width: 65%;
 }
-.videoPlayer iframe {
+.iframe {
   width: 100%;
+  height: 250px;
+  outline: none;
+  border-style: none;
+  padding: 10px;
+}
+.videoPlayer h3 {
+  border-bottom: 1px solid #ccc;
+  margin: 20px;
 }

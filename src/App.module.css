@@ -3,14 +3,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: chocolate;
+  background-color: #e6be8a;
+}
+.mainContainer > h1 {
+  color: brown;
 }
 .App {
-  width: 50%;
+  width: 80%;
   display: flex;
   text-align: center;
-  background-color: lightblue;
+  background-color: #f9ebea;
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: 15%;
+  left: 10%;
 }
